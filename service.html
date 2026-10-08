@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shipping, returns and support." />
+    <title>Service | Online Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="service">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">Online Store</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="service.html">Service</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="actions">
+        <button
+          id="theme-toggle"
+          class="btn ghost"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          Theme
+        </button>
+        <button
+          id="cart-toggle"
+          class="btn"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="wrap narrow">
+        <h1>Service</h1>
+        <details open>
+          <summary>How long does shipping take?</summary>
+          <p>
+            Orders ship within one business day and arrive in two to five days.
+          </p>
+        </details>
+        <details>
+          <summary>What is the return policy?</summary>
+          <p>Return any unused item within 30 days for a full refund.</p>
+        </details>
+        <details>
+          <summary>Can I change my order?</summary>
+          <p>Message us within two hours of ordering and we will update it.</p>
+        </details>
+        <h2>Contact support</h2>
+        <form id="contact-form" novalidate>
+          <label
+            >Name <input name="name" required minlength="2" autocomplete="name"
+          /></label>
+          <p class="error" data-error-for="name"></p>
+          <label
+            >Email
+            <input name="email" type="email" required autocomplete="email"
+          /></label>
+          <p class="error" data-error-for="email"></p>
+          <label
+            >Message
+            <textarea
+              name="message"
+              rows="5"
+              required
+              minlength="10"
+            ></textarea>
+          </label>
+          <p class="error" data-error-for="message"></p>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Online Store. Free shipping on orders over $75.</p>
+    </footer>
+  </body>
+</html>

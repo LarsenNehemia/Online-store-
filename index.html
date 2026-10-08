@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Everyday desk and home goods." />
+    <title>Home | Online Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">Online Store</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="service.html">Service</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="actions">
+        <button
+          id="theme-toggle"
+          class="btn ghost"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          Theme
+        </button>
+        <button
+          id="cart-toggle"
+          class="btn"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <h1>Good things for the spaces you work and live in.</h1>
+        <p>Small-batch desk and home goods, shipped within two days.</p>
+        <a class="btn" href="products.html">Browse all products</a>
+      </section>
+      <section class="wrap">
+        <h2>Featured</h2>
+        <div
+          id="product-grid"
+          class="grid"
+          data-limit="4"
+          aria-live="polite"
+        ></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Online Store. Free shipping on orders over $75.</p>
+    </footer>
+  </body>
+</html>

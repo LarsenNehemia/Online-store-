@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse, search and sort every product." />
+    <title>Products | Online Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="products">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">Online Store</a>
+      <nav aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="service.html">Service</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="actions">
+        <button
+          id="theme-toggle"
+          class="btn ghost"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          Theme
+        </button>
+        <button
+          id="cart-toggle"
+          class="btn"
+          type="button"
+          aria-haspopup="dialog"
+        >
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="wrap">
+        <h1>Products</h1>
+        <form class="controls" role="search" onsubmit="return false;">
+          <label
+            >Search
+            <input id="search" type="search" placeholder="Lamp, notebook..."
+          /></label>
+          <label
+            >Category
+            <select id="category">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label
+            >Sort
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="rating">Top rated</option>
+            </select>
+          </label>
+        </form>
+        <p id="result-count" class="muted" aria-live="polite"></p>
+        <div id="product-grid" class="grid"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Online Store. Free shipping on orders over $75.</p>
+    </footer>
+  </body>
+</html>
